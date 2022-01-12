@@ -7,6 +7,8 @@
        yum: 
          name: httpd
          state: present
+       notify:
+         - restarted
      - name: started apache
        service:
          name: httpd
